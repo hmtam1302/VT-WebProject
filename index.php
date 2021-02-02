@@ -1,2 +1,2 @@
 <?php 
-header('Localtion: php');
+header('Localtion: php/index.php');
