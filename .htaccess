@@ -1,0 +1,39 @@
+
+RewriteOptions inherit
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^page "https\:\/\/www\.facebook\.com\/VeTruong\.thpt\.gcd" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^t\/frame$ "https\:\/\/m\.facebook\.com\/profilepicframes\/\?selected_overlay_id\=434131981286036" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vetruonggcd\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vetruonggcd\.com$
+RewriteRule ^index\.htm$ "https\:\/\/vetruonggcd\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vetruonggcd\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vetruonggcd\.com$
+RewriteRule ^index\.html$ "https\:\/\/vetruonggcd\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vetruonggcd\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vetruonggcd\.com$
+RewriteRule ^index$ "https\:\/\/vetruonggcd\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^t\/tvhn$ "https\:\/\/docs\.google\.com\/forms\/d\/e\/1FAIpQLScGhvucq\-3R5AUFPzXd5XSKPX3yku8GjJIzgSASksPY0InXZA\/viewform" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^t\/dkchs$ "https\:\/\/docs\.google\.com\/forms\/d\/e\/1FAIpQLSdwEl7YWNryN_ANs2fwx62M07K2O2pwYKc7CaznLzpFyR62lw\/viewform\?usp\=sf_link" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^t\/dkhs$ "https\:\/\/docs\.google\.com\/forms\/d\/1gssAH2jEbVeXF\-lTj5\-4EycbDF0BStl9RH9OcBNZvac\/viewform\?edit_requested\=true" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^t\/dkhs12$ "https\:\/\/docs\.google\.com\/forms\/d\/1TrHI5FbykzF73Na5eFPHiu4IKYs3Yjror3DDlfSIjEY" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^t\/dkcast$ "https\:\/\/docs\.google\.com\/forms\/d\/1CJUJAVV7u_T3L6jo3MrQCWBkMM_aw6oZuJ9LS96A5VA" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vetruonggcd\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vetruonggcd\.com$
+RewriteRule ^t\/hocbong$ "https\:\/\/www\.facebook\.com\/VeTruong\.thpt\.gcd\/posts\/2034771346685066" [R=302,L]
+RewriteCond %{HTTP_HOST} ^vetruonggcd\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vetruonggcd\.com$
+RewriteRule ^t\/xacnhanve$ "https\:\/\/docs\.google\.com\/forms\/d\/1PK2CqM7zp2P0CMsEJyk24amlprqroRQ7tcx6kuleQ_w\/edit" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^tracuu$ "https\:\/\/vetruonggcd\.com\/php\/search\.php" [R=301,L]
