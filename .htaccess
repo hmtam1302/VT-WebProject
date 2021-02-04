@@ -1,0 +1,5 @@
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^t\/khaosatthacmac$ "https\:\/\/docs\.google\.com\/forms\/d\/1FjjAsfkt3Ekfpx2hRTJi5_LUR2gPdO_mSIxWT6zqxhI\/" [R=301,L]
